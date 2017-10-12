@@ -22,8 +22,10 @@ describe('generator-tuba-react-ts:app', () => {
     assert.file([
       'bower.json',
       'package.json',
+      'tsconfig.json',
       '.gitignore',
       '.bowerrc',
+      '.babelrc',
       'webpack.config.js'
     ]);
   });

@@ -50,6 +50,11 @@ module.exports = generator.extend({
         this.templatePath('_webpack.config.js'),
         this.destinationPath('webpack.config.js')
       );
+      this.fs.copy(this.templatePath('babelrc'), this.destinationPath('.babelrc'));
+      this.fs.copy(
+        this.templatePath('_tsconfig.json'),
+        this.destinationPath('tsconfig.json')
+      );
     },
     app() {
       this.fs.copyTpl(
