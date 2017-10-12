@@ -55,6 +55,7 @@ module.exports = generator.extend({
         this.templatePath('_tsconfig.json'),
         this.destinationPath('tsconfig.json')
       );
+      this.fs.copy(this.templatePath('.npmignore'), this.destinationPath('.gitignore'));
     },
     app() {
       this.fs.copyTpl(
