@@ -3,7 +3,7 @@ import * as React from 'react';
 
 // class constructor
 
-export defualt class App extends React.Component<any, any> {
+export default class App extends React.Component<any, any> {
   constructor(props:any) {
     super(props);
     this.state = {
@@ -23,6 +23,7 @@ export defualt class App extends React.Component<any, any> {
         <div className="row justify-content-center">
           <div className="col">
             <h2>Hello from App component!</h2>
+            <p>{this.state.foo}</p>
           </div>
         </div>
       </div>
