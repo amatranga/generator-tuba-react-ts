@@ -69,16 +69,16 @@ module.exports = generator.extend({
         this.templatePath('_server/app.js'),
         this.destinationPath('server/app.js')
       );
-      this.fs.copyTpl(
-        this.templatePath('_public/index'),
-        this.destinationPath('public/index.html'),
-        {
-          name: this.props.name
-        }
+      this.fs.copyTpl(this.templatePath('index'), this.destinationPath('index.html'), {
+        name: this.props.name
+      });
+      this.fs.copy(
+        this.templatePath('_src/index.tsx'),
+        this.destinationPath('src/index.tsx')
       );
       this.fs.copy(
-        this.templatePath('_client/_src/_components/App.tsx'),
-        this.destinationPath('client/src/components/App.tsx')
+        this.templatePath('_src/_components/App.tsx'),
+        this.destinationPath('src/components/App.tsx')
       );
     }
   },
