@@ -16,7 +16,7 @@ describe('generator-tuba-react-ts:app', () => {
     assert.file(['client/src/index.tsx', 'client/src/components/App.tsx']);
   });
   it('creates server files', () => {
-    assert.file(['server/index.js', 'server/app.js']);
+    assert.file('server/index.js');
   });
   it('creates other root level files', () => {
     assert.file([

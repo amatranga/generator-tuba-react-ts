@@ -65,10 +65,6 @@ module.exports = generator.extend({
           name: this.props.name
         }
       );
-      this.fs.copy(
-        this.templatePath('_server/app.js'),
-        this.destinationPath('server/app.js')
-      );
       this.fs.copyTpl(this.templatePath('index'), this.destinationPath('index.html'), {
         name: this.props.name
       });
