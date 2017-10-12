@@ -5,9 +5,7 @@ const yosay = require('yosay');
 
 module.exports = generator.extend({
   prompting() {
-    this.log(
-      yosay('Welcome to ' + chalk.yellow('generator-tuba-react-ts') + ' generator!')
-    );
+    this.log(yosay('Welcome to ' + chalk.yellow('tuba-react-ts') + ' generator!'));
     return this.prompt([
       {
         type: 'input',
