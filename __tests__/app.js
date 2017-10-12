@@ -13,7 +13,7 @@ describe('generator-tuba-react-ts:app', () => {
     assert.file('index.html');
   });
   it('creates client files', () => {
-    assert.file(['client/src/index.tsx', 'client/src/components/App.tsx']);
+    assert.file(['src/index.tsx', 'src/components/App.tsx']);
   });
   it('creates server files', () => {
     assert.file('server/index.js');
