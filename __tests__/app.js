@@ -10,7 +10,7 @@ describe('generator-tuba-react-ts:app', () => {
   });
 
   it('creates public files', () => {
-    assert.file('public/index.html');
+    assert.file('index.html');
   });
   it('creates client files', () => {
     assert.file(['client/src/index.tsx', 'client/src/components/App.tsx']);
